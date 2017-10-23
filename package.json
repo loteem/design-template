@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.12.1"
+  },
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/main.scss public/stylesheets/main.css",
+    "start": "open ./public/index.html && nodemon -e scss -x \"npm run build-css\""
+  }
+}
